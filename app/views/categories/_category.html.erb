@@ -1,0 +1,13 @@
+<% if category.name == 'CategoryOne' %>
+  <span class='badge alert-danger'>
+<% elsif category.name == 'CategoryTwo' %>
+  <span class='badge alert-success'>
+<% elsif category.name == 'Category3' %>
+  <span class='badge progress-bar-info'>
+<% elsif category.name == 'Category4' %>
+  <span class='badge progress-bar-warning'>
+<% elsif category.name == 'Category5' %>
+  <span class='badge progress-bar-primary'>
+<% end %>
+  <%= category.name %>
+</span>
