@@ -1,9 +1,11 @@
 <%= render 'shared/title', title: 'All Categories'%>
 
+<h6><%= link_to '(Create New Category)', new_category_path %></h6>
+
 <% @categories.each do |category| %>
 <div class='row'>
   <div class='well col-md-6'>
-    <p><%= category.name %></p>
-  </div>
+    <p><%= link_to category.name, categories_path %></p>
+  </div>  
 </div>
 <% end %>
